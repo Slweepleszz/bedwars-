@@ -1,0 +1,27 @@
+local function executeScriptForGameId(gameId)
+    if gameId == 286090429 then
+        print("||Executing script for Arsenal||")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/SnywareArsenal'))()
+    elseif gameId == 301549746 then
+        print("||Executing script for CounterBlox||")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/SnyWare%20CounterBlox'))()
+    elseif gameId == 6872274481 then
+        print("||Executing script for Bedwars||")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/Snyware%20Bedwars'))()
+    elseif gameId == 6872265039 then
+        print("||Executing script for Bedwars LOBBY||")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/Snyware%20Bedwars'))()
+    elseif gameId == 8560631822 then
+        print("||Executing script for Bedwars||")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/Snyware%20Bedwars'))()
+    elseif gameId == 8444591321 then
+        print("||Executing script for Bedwars||")
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/AFGCLIENT/Snyware/main/Snyware%20Bedwars'))()
+    else
+        print("||No script available for game ID|| " .. gameId)
+    end
+end
+
+local currentGameId = game.PlaceId
+
+executeScriptForGameId(currentGameId)
